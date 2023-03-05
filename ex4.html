@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        do {
+            var a;
+            a = parseInt(prompt("donner la 1er angle"))
+        } while (isNaN(a) || (a < 0) || (a > 180))
+        do {
+            var b;
+            b = parseInt(prompt("donner la deuxieme angle"))
+        } while (isNaN(b) || (b < 0) || (b > 180))
+
+        do {
+            var c;
+            c = parseInt(prompt("donner la 3eme angle"))
+        } while (isNaN(c) || (c < 0) || (c > 180))
+
+        //Isocèle rectangle
+
+        if ((a == 90 || b == 90 || c == 90) && (a == 45 || b == 45 || c == 45) && (a == 45 || b == 45 || c == 45)) {
+            document.write("Isocèle rectangle")
+        }
+
+        //Rectangle
+        else if ((a == 90 || b == 90 || c == 90) && (a < 90 || a + b + c == 180)) {
+            document.write("rectangle")
+        }
+
+        //Equilatéral 606060
+        else if ((a == b && a == c && b == c && a + b + c == 180)) {
+            document.write("Equilatéral")
+        }
+
+        //Isocèle
+        else if ( (a == b || a == c || b == c)) {
+            document.write("Isocèle")
+        }
+
+        //Isocèle exp 36 72 72
+        else if ( (a == b || a == c || b == c) && (a+b+c == 180)) {
+            document.write("Isocèle")
+        }
+
+        //Quelconque 87 50 37
+        else if ( (a+b+c == 180)) {
+            document.write("Quelconque")
+        }
+        else ( document.write("noothinnggg"))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+       function saisie()
+       {
+    var x ;
+     x=parseInt(prompt("donner un nombre"))
+    return x ;
+       } 
+
+       function calcul()
+       {s=0 ; c=1
+            s=saisie()+saisie()
+            c= Math.pow(s,2)
+        alert("la somme est "+s+"et le carre est "+c)
+       }
+      
+    </script> 
+    <button onclick="calcul()">calculer</button>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write("<table border=1><caption>calcul de factoriel</caption>")
+        do {
+            var x;
+
+            do {
+                x = parseInt(prompt("donner un entier"))
+            } while (isNaN(x))
+            
+            x = Math.abs(x)
+            // document.write(x)
+
+            function Factorial(n) {
+                var ans = 1;
+
+                for (var i = 2; i <= n; i++)
+                    ans = ans * i;
+                return ans;
+            }
+            document.write("<tr>")
+            document.write("<td>",x,"!","</td>")
+            document.write("<td>",Factorial(x),"</td>")
+            document.write("</tr>")
+            rep = prompt("voulez vous quittez [oui/non]")
+        } while (rep != "oui")
+        document.write("</table>")
+
+//document.write("<table border=1><caption>calcul de factoriel</caption>\
+   // <tr><td>",x,"!","</td><td>",Factorial(x),"</td></tr></table>")
+
+
+    </script>
+</body>
+
+</html>

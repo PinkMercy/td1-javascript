@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        do {
+            a = parseInt(prompt("donner un nombre"))
+            if (isNaN(a)) {
+                alert("impooo")
+            }
+        } while (isNaN(a))
+        do {
+            b = prompt("donner un operateur")
+        } while (b != "+" && b != "-" && b != "/" && b != "*")
+        do {
+            c = parseInt(prompt("donner un deuxieme nombre"))
+
+            if (isNaN(c)) {
+                alert("impooo2")
+            }
+        } while (isNaN(c))
+        switch (b) {
+            case "+":
+
+                x = a + c
+                break;
+
+            case "-":
+                x = a - c
+                break;
+
+            case "/":
+                x = a / c
+                break;
+            case "*":
+                x = a * c
+                break;
+            default:
+
+                alert("impossible")
+        }
+        document.write(a, b, c, "=", x)
+    </script>
+
+</body>
+
+</html>
